@@ -11,3 +11,11 @@ else
   status=$"offline"
   mensagem=$"O Apache está offline."
 fi
+
+login=$"$dataEHora | Apache | $status | $mensagem"
+
+if [ $status == "online" ]; then
+   echo -e "$login" >> /efs/PauloAugustoLazzarotto/online_service.log
+else
+   echo -e "$login" >> /efs/PauloAugustoLazzarotto/offline_service.log
+fi
