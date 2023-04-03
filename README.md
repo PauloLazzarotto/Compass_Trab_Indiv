@@ -1,2 +1,4 @@
 # Compass_Trab_Indiv
-Trabalho individual de AWS.
+
+  O script foi feito contendo todos os requisitos solicitados para o trabalho, sendo capaz de verificar data e hora, validar se o servidor Apache está online ou offline e imprimir a resposta em dois arquivos separados, um para cada caso.
+	O código começa vendo a data e a hora; depois disso uma variável armazena o valor da validação do serviço Apache para, depois, ser validada por um if else onde serão criadas mais duas variáveis, uma para o status e outra para a mensagem dizendo se o serviço está online ou não. Após isso é criada outra variável "login", sendo responsável por receber os valores de data e hora coletados no início do código, status e mensagem e o Apache. Depois um if else irá validar a variável status e, dependendo da situação do serviço, irá criar um arquivo .log indicando se está online ou offline.
